@@ -2,71 +2,101 @@
     font-family:'Courier New', Courier, monospace;
     box-sizing: border-box;
     color: white;
-    margin: 0%;
+    margin: 0;
+    padding: 0;
 }
+
 body{
     background-color: #222222;
 }
+
+/* CABEÇALHO */
 #cabecalho{
     display:flex;
-    justify-content: right;
-    flex-wrap: wrap;  
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 1em;
 }
+
 #cabecalho a{
     padding: 1em;
     text-decoration: none;
 }
+
+#introducao{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;               
+  flex-wrap: wrap;
+}
+
+#texto_introducao{
+  max-width: 400px;
+  text-align: left;
+  margin: 0;
+}
+
+#introducao img{
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
 #about_me {
   width: 40em;
   max-width: 100%;
-  margin-left: auto;
-  padding: 10px;
-  padding-right: 5em;
-  transform: translateX(-160px);
-}
-@media (max-width: 600px){
-    #cabecalho{
-        flex-direction: column;
-    }
-@media (max-width: 600px){
-  #about_me{
-    width: 100%;
-    margin-left: 0;
-    text-align: center;
-  }
-}
+  margin-left: auto;   
+  margin-right: 0;
+  padding: 10px 5em 10px 10px;
+  text-align: left;
 }
 #Ferramentas{
     display: flex;
     background-color: #242424;
     justify-content: center;
     text-align: center;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
+    gap: 20px;
     padding: 1em;
 }
 #Ferramentas p{
-    margin-right: 4em;
+    margin: 0;
     font-size: 1.4em;
 }
-#introducao {
-  display: flex;
-  align-items: center;
-  justify-content: center; 
-  gap: 40px;
-  flex-wrap: wrap;
+@media (max-width: 600px){
+    #cabecalho{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #introducao{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    #texto_introducao{
+        text-align: center;
+    }
+    #about_me{
+        text-align: center;
+        margin: 0 auto;
+        padding: 10px 1em;
+     }
+
+    #Ferramentas{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #Ferramentas p{
+        font-size: 1.2em;
+    }
+    #introducao img{
+    margin: 0 auto;
+  }
 }
 
-#texto_introducao {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 400px;
-  transform: translateX(-100px);
-}
-
-#introducao img {
-  width: 250px;
-  max-width: 100%; 
-  height: auto;
-  transform: translateX(130px);
-}

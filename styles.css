@@ -1,19 +1,40 @@
 *{
     font-family:'Courier New', Courier, monospace;
     box-sizing: border-box;
+    color: white;
+    margin: 0%;
+}
+body{
+    background-color: #222222;
 }
 #cabecalho{
     display:flex;
-    justify-content: center;
+    justify-content: right;
     flex-wrap: wrap;  
 }
 #cabecalho a{
-    padding: 1.5em;
-    color: black;
+    padding: 1em;
     text-decoration: none;
 }
 #introducao{
     text-align: center;
     justify-content: center;
 }
-
+@media (max-width: 600px){
+    #cabecalho{
+        flex-direction: column;
+    }
+}
+#Ferramentas{
+    display: flex;
+    background-color: #242424;
+    box-shadow:;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;  
+    padding: 1em;
+}
+#Ferramentas p{
+    margin-right: 4em;
+    font-size: 1.4em;
+}

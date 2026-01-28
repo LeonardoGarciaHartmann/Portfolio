@@ -40,7 +40,6 @@ body {
   justify-content: center;
   gap: 60px;
   flex-wrap: wrap;
-  padding: 3em 2em;
 }
 
 #texto_introducao {

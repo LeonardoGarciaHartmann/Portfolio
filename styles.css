@@ -11,13 +11,12 @@ body {
   line-height: 1.6;
 }
 
-/* ===== CABEÇALHO ===== */
 #cabecalho {
   position: sticky;
   top: 0;
   background-color: #222222;
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex;
   flex-wrap: wrap;
   gap: 10px;
   padding: 1em 2em;
@@ -35,7 +34,6 @@ body {
   background-color: #333;
 }
 
-/* ===== INTRODUÇÃO ===== */
 #introducao {
   display: flex;
   align-items: center;
@@ -67,7 +65,6 @@ body {
   border-radius: 12px;
 }
 
-/* ===== FERRAMENTAS ===== */
 #Ferramentas {
   display: flex;
   background-color: #242424;
@@ -92,7 +89,6 @@ body {
   background-color: #444;
 }
 
-/* ===== SOBRE MIM ===== */
 #about_me {
   max-width: 900px;
   margin: 0 auto;
@@ -109,7 +105,6 @@ body {
   opacity: 0.95;
 }
 
-/* ===== PROJETOS ===== */
 #projetos {
   max-width: 900px;
   margin: 0 auto;
@@ -121,7 +116,6 @@ body {
   margin-bottom: 15px;
 }
 
-/* ===== RESPONSIVO ===== */
 @media (max-width: 600px) {
   #cabecalho {
     flex-direction: column;

@@ -1,102 +1,152 @@
-*{
-    font-family:'Courier New', Courier, monospace;
-    box-sizing: border-box;
-    color: white;
-    margin: 0;
-    padding: 0;
+* {
+  font-family: "Courier New", Courier, monospace;
+  box-sizing: border-box;
+  color: white;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-color: #222222;
+body {
+  background-color: #222222;
+  line-height: 1.6;
 }
 
-/* CABEÇALHO */
-#cabecalho{
-    display:flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-    gap: 10px;
-    padding: 1em;
+/* ===== CABEÇALHO ===== */
+#cabecalho {
+  position: sticky;
+  top: 0;
+  background-color: #222222;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 1em 2em;
+  border-bottom: 1px solid #333;
 }
 
-#cabecalho a{
-    padding: 1em;
-    text-decoration: none;
+#cabecalho a {
+  padding: 0.8em 1.2em;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.3s;
 }
 
-#introducao{
+#cabecalho a:hover {
+  background-color: #333;
+}
+
+/* ===== INTRODUÇÃO ===== */
+#introducao {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;               
+  gap: 60px;
   flex-wrap: wrap;
+  padding: 3em 2em;
 }
 
-#texto_introducao{
+#texto_introducao {
   max-width: 400px;
   text-align: left;
-  margin: 0;
 }
 
-#introducao img{
+#texto_introducao h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#texto_introducao p {
+  font-size: 1.2em;
+  opacity: 0.9;
+}
+
+#introducao img {
   width: 250px;
   max-width: 100%;
   height: auto;
-  margin: 0;
+  border-radius: 12px;
 }
+
+/* ===== FERRAMENTAS ===== */
+#Ferramentas {
+  display: flex;
+  background-color: #242424;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 2em;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+#Ferramentas p {
+  background-color: #333;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 1.1em;
+  transition: 0.3s;
+}
+
+#Ferramentas p:hover {
+  transform: scale(1.05);
+  background-color: #444;
+}
+
+/* ===== SOBRE MIM ===== */
 #about_me {
-  width: 40em;
-  max-width: 100%;
-  margin-left: auto;   
-  margin-right: 0;
-  padding: 10px 5em 10px 10px;
-  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3em 2em;
 }
-#Ferramentas{
-    display: flex;
-    background-color: #242424;
-    justify-content: center;
+
+#about_me h1 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+#about_me p {
+  font-size: 1.1em;
+  opacity: 0.95;
+}
+
+/* ===== PROJETOS ===== */
+#projetos {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3em 2em;
+}
+
+#projetos h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 600px) {
+  #cabecalho {
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    flex-wrap: wrap;
+  }
+
+  #introducao {
+    flex-direction: column;
+    text-align: center;
     gap: 20px;
-    padding: 1em;
-}
-#Ferramentas p{
-    margin: 0;
-    font-size: 1.4em;
-}
-@media (max-width: 600px){
-    #cabecalho{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+  }
 
-    #introducao{
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
+  #texto_introducao {
+    text-align: center;
+  }
 
-    #texto_introducao{
-        text-align: center;
-    }
-    #about_me{
-        text-align: center;
-        margin: 0 auto;
-        padding: 10px 1em;
-     }
+  #Ferramentas {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    #Ferramentas{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #Ferramentas p{
-        font-size: 1.2em;
-    }
-    #introducao img{
-    margin: 0 auto;
+  #Ferramentas p {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
   }
 }
-

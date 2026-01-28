@@ -17,8 +17,11 @@ body{
     text-decoration: none;
 }
 #introducao{
-    text-align: center;
-    justify-content: center;
+  position: fixed;
+  right: 1em;
+  width: 40em;
+  padding: 10px;
+
 }
 @media (max-width: 600px){
     #cabecalho{
@@ -28,7 +31,6 @@ body{
 #Ferramentas{
     display: flex;
     background-color: #242424;
-    box-shadow:;
     justify-content: center;
     text-align: center;
     flex-wrap: wrap;  

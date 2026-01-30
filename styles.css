@@ -119,6 +119,12 @@ body {
   margin: 0 auto;
   padding: 3em 2em;
 }
+#contatos a{
+  display: flex;
+  text-decoration: none;
+  color: white;
+  align-items: center;
+}
 @media (max-width: 600px) {
   #cabecalho {
     flex-direction: column;

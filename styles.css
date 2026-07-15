@@ -115,15 +115,26 @@ body {
   margin-bottom: 15px;
 }
 #contatos{
-  justify-items: center;
   margin: 0 auto;
   padding: 3em 2em;
+  text-align: center;
 }
-#contatos a{
+.contatos-icones{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.contatos-icones a{
   display: flex;
   text-decoration: none;
   color: white;
   align-items: center;
+}
+.contatos-icones img{
+  width: 4em;
+  height: 4em;
+  padding: 0.2em;
 }
 @media (max-width: 600px) {
   #cabecalho {
